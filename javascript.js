@@ -15,8 +15,13 @@ function inicio(){
     $("#clickame").mouseleave(contraer);
     $(".miDiv").click(changeMiDiv);
     $("#color").click(newElement);
+    $(".miDiv").click(muestraOpcion);
 }
-
+ var opc;
+function muestraOpcion(){
+    opc = $(this).attr("opcion");
+    console.log(opc);
+}
 var numDiv = 0;
 function newElement(){
     var div = $("<div class='miDiv2'>Nanananana"+numDiv+"</div>");
